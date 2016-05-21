@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Hello y'all!
+tagline: My own Jekyll blog hosted on GiHub ;)
 ---
 {% include JB/setup %}
 
