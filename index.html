@@ -1,9 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+	<meta charset="UTF-8">
+	<title>WP Migracija</title>
+
+<style>
+	
+body {
+	background-color: beige;
+}
+
+.content {
+	padding: 20px;
+}
+
+p, li {
+	font-size: x-large;
+}
+
+h1 {
+	text-align: center;
+}
+</style>
+	
 </head>
+
 <body>
-<h2>Test 123</h2>
+	<div class="content">
+		
+	
+<h1>Uputstvo za migraciju WordPress-a</h1>
+
+<h2>Koraci ukratko:</h2>
+
+
+<p>
+- Instalirati na odredištu WP, odnosno napraviti bazu i uraditi osnovnu
+konfiguraciju
+</p>
+
+<p>
+- Na oba instalirati UpdraftPlus - Backup/Restore plugin i wp WP
+Migrate DB plugin (onaj sa ptičicama)
+</p>
+
+<p>
+- Updraftom odraditi bekap svega na Izvoru i downloadovati kod sebe
+</p>
+
+<p>
+- Na Odredištu pogledati u WP Migrate kako tačno glase aktuelni URL i PATH
+</p>
+
+<p>
+- Na Izvoru u WP Migrate kao Odredište uneti te podatke, kliknuti
+Export i skinuti .sql.gz fajl sa izmenama
+</p>
+
+<p>
+- Na odredištu kroz Updraft uploadovati sve bekapovane fajlove OSIM BAZE i uraditi restore
+</p>
+
+<p>
+- POŠTO SE TO ZAVRŠI, uraditi update baze kroz PhpMyadmin ili adminer
+ili konzolu, odnosno uneti migrirani fajl umesto aktuelne baze
+</p>
+
+<p>
+- To je to, sve radi :)	
+</p>
+
+<h3>Ako ipak ne radi, proveriti:</h3>
+<ul>
+	<li>wp-config</li>
+	<li>php.ini ili .user.ini</li>
+	<li>.htaccess</li>
+	<li>prefikse u bazi</li>
+</ul>
+
+</div>
+
 </body>
 </html>
+
