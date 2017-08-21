@@ -1,0 +1,20 @@
+body {
+	background: lavender;
+	padding: 20px;
+}
+
+.large {
+	font-size: xx-large;
+}
+
+.message-red {
+	color: red;
+	border: thick red solid;
+	display: inline-block;
+}
+
+.message-green {
+	color: green;
+	border: thick green solid;
+	display: inline-block;
+}
